@@ -1,0 +1,6 @@
+autopep8==1.2.1
+numpy==1.10.4
+pep8==1.7.0
+pydicom==0.9.9
+virtualenv==14.0.1
+wheel==0.26.0
