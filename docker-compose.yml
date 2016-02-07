@@ -2,5 +2,10 @@ python:
   build: .
   restart: always
   container_name: imagen-dumbox
+  environment:
+     - DISPLAY=192.168.99.1:0
   volumes:
      - /etc/localtime:/etc/localtime:ro
+     - ./bin/:/usr/src/app/bin/
+     - ./images/:/usr/src/app/images/
+     - /tmp/.X11-unix:/tmp/.X11-unix
